@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+$("#fade").click(function(){
+	$("#fade_p").fadeTo("slow", .1);
+});
+  
+});
+</script>
+</head>
+
+<body>
+<p>This page will be used to demonstrade the fading methods of jQuery.</p>
+<p id="fade_p">Fade me Please Please Please Fade MEEE</p>
+<button id="toggle">Fade in boxes</button>
+<button id="fade">Fade to Opacity</button>
+<br><br>
+<div id="div1" style="width:5em;height:5em;display:none;background-color:cyan;"></div><br>
+<div id="div2" style="width:5em;height:5em;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:5em;height:5em;display:none;background-color:#66cc00;"></div>
+
+</body>
+</html>
